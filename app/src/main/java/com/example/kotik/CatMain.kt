@@ -20,13 +20,9 @@ fun CatMain() {
         false -> Triple(R.drawable.kotik2, getCompliment(textRandomCount), false)
     }
 
-    fun textChanger() {
+    ScreenUi(screenData) {
         isFirstPage = !isFirstPage
         textRandomCount = Random.nextInt(1, 102)
-    }
-
-    ScreenUi(screenData) {
-        textChanger()
     }
 }
 
